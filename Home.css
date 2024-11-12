@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');/*Put in documentation source: google*/
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+*{
+    font-family: 'Raleway', sans-serif;/*Put in documentation source: google*/
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.heading{
+    font-size: 4rem;
+    color: var(--primary);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+/* header */
+
+.header{
+    position: sticky;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background: white;
+    box-shadow: gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color: var(--black);
+    margin: 0;
+}
+
+.header .navbar .btn{
+    margin-top: 0;
+    color: white;
+    background-color: #002366;
+}
+
+.header .navbar .btn:hover{
+    color: black;
+}
+
+#intro{
+    width: 100%;
+    height: 55vh;
+    background-image: url(pexels-pixabay-316093.jpg);
+    background-size: 100%;
+}
+
+.img_intro{
+    float: right;
+    border-radius: 9px;
+}
+
+.headerSection{
+    padding: 50px;
+}
+
+.headerSection p{
+    letter-spacing: 0.5px;
+    text-transform: none;
+    font-family: 'Manrope', sans-serif;
+    color: #24272E;
+    word-spacing: 2px;
+}
+
+.headerSection h2{
+    letter-spacing: 1.5px;
+    color: #002366;
+}
+
+.headerSection h3{
+    font-weight: 1000;
+    letter-spacing: 1.5px;
+    word-spacing: 2.5px;
+    padding-bottom: 20px;
+    border-bottom: #002366 solid .1rem;
+}
+
+.buttonExploreHeader{
+    padding-top: 30px;
+}
+
+.buttonExploreHeader .exploreHeader {
+    color: #e8e8e8;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    background: #002366;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.buttonExploreHeader .exploreHeader:hover {
+    outline: 2px solid #002366;
+    background: transparent;
+    color: #002366;
+}
+  
+.buttonExploreHeader .exploreHeader:active {
+    box-shadow: none;
+}
+
+
+/*end header*/
+
+/* footer */
+
+.footer{
+    padding-top: 20px;
+    padding-bottom: 20px    ;
+    background: #545457;
+}
+
+.footer .name h2{
+    margin-left: 35%;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+    gap: 10%;
+    padding-left: 35%;
+    padding-right: 35%;
+}
+
+.footer .box-container .box h3{
+    font-size: 15px;
+    color: white;
+    padding: 10px;
+}
+
+.footer .box-container .box a{
+    font-size: 15px;
+    display: block;
+    color: white;
+    padding: 5px;
+    
+}
+
+.footer .box-container .box a i{
+    color: white;
+    padding-right: .5rem;
+}
+
+.footer .share{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.footer .share a{
+    color: white;
+    font-size: 20px;
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    border-radius: 50%;
+    border: .1rem solid var(--primary);
+    margin: .3rem;
+}
+
+.footer .credit{
+    font-size: small;
+    text-align: center;
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: .1rem solid rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+
+/* end */
+
+/* media queries */
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 2rem 3rem;
+    }
+}
+@media (max-width: 768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 110%; right: -110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        background: var(--white);
+        border-radius: .5rem;
+    }
+
+    .header .navbar.active{
+        right: 2rem;
+        transition: .4s linear;
+    }
+
+    .header .navbar a{
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+
+    .home .slide .content{
+        width: 50rem;
+    }
+
+    .review .review-slider{
+        width: 100%;
+        padding: 1rem;
+        padding-top: 15%;
+    }
+
+}
+
+@media (max-width: 450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .home .slide .content{
+        width: 30rem;
+    }
+
+    .home .slide .content h3{
+        font-size: 3rem;
+    }
+
+}
+/*map*/
+
+#mapnavi{
+    margin-top: 200px;
+}
+
+#sectionmap1{
+    display: flex;
+    justify-content: space-between;
+    background-color: #2A2A2B;
+    padding: 120px;
+}
+
+#addmapnavi{
+    font-size: 17px;
+    text-transform: none;
+    font-family: 'Manrope', sans-serif;
+    color: white; 
+    font-weight: 100;
+    border-bottom: .1rem white solid;
+    text-transform: none;
+}
+
+#p_mapnavi{
+    font-size: 17px;
+    text-transform: none;
+    font-family: 'Manrope', sans-serif;
+    color: white;
+    font-weight: 100;
+    padding-top: 40px;
+}
+
+#iframesection{
+    padding-top: 0%;
+    padding-bottom: 0%;
+}

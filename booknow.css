@@ -1,0 +1,95 @@
+#img {
+    height: 30%;
+    width: 100%;
+    opacity: 0.5;
+  }
+  
+  .hook {
+    position: absolute;
+    top: 300px;
+    left: 50px;
+    font-size: 200%;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+  }
+  
+.booking {
+    width: 50%;
+    padding: 50px;
+}
+
+div.elem-group {
+    margin: 20px 0;
+}
+div.elem-group.name {
+    width: 31.6%;
+    display: inline-block;
+    float: center;
+    margin-left:1%;
+}
+div.elem-group.inlined{
+    width: 49%;
+    display: inline-block;
+    float: left;
+    margin-left: 1%;
+}
+
+label {
+    display: block;
+    padding-bottom: 10px;
+    font-size: 1.5em; /* Increase the font size */
+}
+
+input,
+select,
+textarea {
+    border-radius: 5px; /* Increase the border-radius for rounded corners */
+    border: 2px solid #777;
+    box-sizing: border-box;
+    font-size: 1.5em; /* Increase the font size */
+    width: 100%;
+    padding: 15px; /* Increase the padding for more spacing */
+}
+
+textarea {
+    height: 200px; /* Adjust the height of the textarea as needed */
+}
+
+hr {
+    border: 1px dotted #ccc;
+}
+
+button {
+    height: 60px; /* Increase the button height */
+    background: #002366;
+    border: none;
+    color: white;
+    font-size: 1.5em; /* Increase the font size */
+    border-radius: 5px; /* Increase the border-radius for rounded corners */
+    padding: 15px; /* Increase the padding for more spacing */
+    cursor: pointer;
+}
+
+button:hover {
+    border: 2px solid black;
+}
+
+.see-password-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .check{
+	font-size: 15px;
+}
+.error {
+    background: #F2DEDE;
+    color: #A94442;
+    padding: 10px;
+    width: 95%;
+    border-radius: 5px;
+    margin: 20px auto;
+ }

@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');/*Put in documentation source: google*/
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+*{
+    font-family: 'Raleway', sans-serif;/*Put in documentation source: google*/
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.heading{
+    font-size: 4rem;
+    color: var(--primary);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+/* header */
+
+.header{
+    position: sticky;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background: white;
+    box-shadow: gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--black);
+    cursor: pointer;
+}
+
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color: var(--black);
+    margin: 0 1.5rem;
+}
+
+.header .navbar .btn{
+    margin-top: 0;
+    color: white;
+    background-color: #002366;
+}
+
+.header .navbar .btn:hover{
+    color: black;
+}
+
+#divExperience{
+    padding: 100px inherit;
+}
+
+/*card spa*/
+
+.img_experienceSpa{
+    vertical-align: middle;
+    float: right;
+    width: 500px;
+}
+
+#experienceSection h1{
+    letter-spacing: 1.5px;
+    font-size: 48px;
+    color: #002366;
+}
+
+#experienceSection p{
+    letter-spacing: 1.5px;
+    font-size: 18px;
+    text-transform: none;
+    font-family: 'Manrope', sans-serif;
+}
+
+#experienceSection p1{
+    font-weight: 1000;
+    letter-spacing: 1.5px;
+    word-spacing: 2.5px;
+}
+
+.experienceSpaDiv{
+    padding-top: 120px;
+    padding-left: 120px;
+}
+
+.experienceSpaSection img{
+    width: 400px;
+    border-radius: 9px;
+    float: left;
+    vertical-align: middle;
+}
+
+.experienceSpaSection h2{
+    font-size: 25px;
+    color: #002366;
+    padding-bottom: 20px;
+    padding-left: 420px;
+    padding-top: 20px;
+}
+
+.experienceSpaSection p{
+    padding-left: 420px;
+    font-size: 25px;
+    text-transform: none;
+    font-family: 'Manrope', sans-serif;
+}
+
+.experienceSpaBtnSection    {
+    padding-left: 420px;
+    padding-top: 30px;
+}
+
+.experienceSpaDiv .experienceBtnSpa {
+    padding-left: 420px;
+    color: #e8e8e8;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    background: #002366;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.experienceSpaDiv .experienceBtnSpa:hover {
+    outline: 2px solid #002366;
+    background: transparent;
+    color: #002366;
+}
+  
+.experienceSpaDiv .experienceBtnSpa:active {
+    box-shadow: none;
+}
+
+/*end spa card*/
+
+/*gym card*/
+
+.experienceGymDiv{
+    padding: 140px;
+}
+
+.experienceGymSection img{
+    width: 400px;
+    border-radius: 9px;
+    float: right;
+    vertical-align: middle;
+}
+
+.experienceGymSection h2{
+    font-size: 25px;
+    color: #002366;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.experienceGymSection p{
+    font-size: 17px;
+    text-transform: none;
+    font-family: 'Manrope', sans-serif;
+}
+
+.experienceGymBtnSection    {
+    padding-top: 30px;
+}
+
+.experienceGymDiv .experienceBtnGym {
+    color: #e8e8e8;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    background: #002366;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.experienceGymDiv .experienceBtnGym:hover {
+    outline: 2px solid #002366;
+    background: transparent;
+    color: #002366;
+}
+  
+.experienceGymDiv .experienceBtnGym:active {
+    box-shadow: none;
+}
+
+/*end gym card*/
+
+/*COURT CARD*/
+
+.experienceCOURTDiv{
+    padding-left: 120px;
+}
+
+.experienceCOURTSection img{
+    width: 400px;
+    border-radius: 9px;
+    float: left;
+    vertical-align: middle;
+    
+}
+
+.experienceCOURTSection h2{
+    font-size: 25px;
+    color: #002366;
+    padding-bottom: 20px;
+    padding-left: 420px;
+    padding-top: 20px;
+}
+
+.experienceCOURTSection p{
+    padding-left: 420px;
+    font-size: 25px;
+    text-transform: none;
+    font-family: 'Manrope', sans-serif;
+}
+
+.experienceCOURTBtnSection    {
+    padding-left: 420px;
+    padding-top: 30px;
+}
+
+.experienceCOURTDiv .experienceBtnCOURT {
+    padding-left: 420px;
+    color: #e8e8e8;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    background: #002366;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.experienceCOURTDiv .experienceBtnCOURT:hover {
+    outline: 2px solid #002366;
+    background: transparent;
+    color: #002366;
+}
+  
+.experienceCOURTDiv .experienceBtnCOURT:active {
+    box-shadow: none;
+}
+
+/*END COURT CARD*/
+
+/* media queries */
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 2rem 3rem;
+    }
+}
+@media (max-width: 768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 110%; right: -110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        background: var(--white);
+        border-radius: .5rem;
+    }
+
+    .header .navbar.active{
+        right: 2rem;
+        transition: .4s linear;
+    }
+
+    .header .navbar a{
+        font-size: 2rem;
+        margin: 2rem 2.5rem;
+        display: block;
+    }
+
+    .home .slide .content{
+        width: 50rem;
+    }
+
+    .review .review-slider{
+        width: 100%;
+        padding: 1rem;
+        padding-top: 15%;
+    }
+
+}
+
+@media (max-width: 450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .home .slide .content{
+        width: 30rem;
+    }
+
+    .home .slide .content h3{
+        font-size: 3rem;
+    }
+
+}

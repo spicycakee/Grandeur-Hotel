@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');/*Put in documentation source: google*/
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans&display=swap');
+
+*{
+    font-family: 'Raleway', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+/*header*/
+.header{
+    position: sticky;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background: white;
+    box-shadow: gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--black);
+    cursor: pointer;
+}
+
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color: var(--black);
+    margin: 0 1.5rem;
+}
+
+.header .navbar .btn{
+    margin-top: 0;
+    color: white;
+    background-color: #002366;
+}
+
+.header .navbar .btn:hover{
+    color: black;
+}
+
+.accodIntro{
+    width: 100%;
+    height: 55vh;
+    background-image: url(pexels-pixabay-164595.jpg);
+    background-size: 100%;
+}
+
+.buttonExploreHeader{
+    padding-top: 30px;
+}
+
+.buttonExploreHeader .exploreHeader {
+    color: #e8e8e8;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    background: #002366;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.buttonExploreHeader .exploreHeader:hover {
+    outline: 2px solid #002366;
+    background: transparent;
+    color: #002366;
+}
+  
+.buttonExploreHeader .exploreHeader:active {
+    box-shadow: none;
+}
+
+
+/*end header*/
+
+/*accommodation header*/
+.accommodationHeader{
+    padding: 50px;
+}
+
+.h3Accod{
+    font-weight: 1000;
+    letter-spacing: 1.5px;
+    word-spacing: 2.5px;
+    padding-bottom: 20px;
+    border-bottom: #002366 solid .1rem;
+}
+
+.h1Accod{
+    letter-spacing: 1.5px;
+    color: #002366;
+    font-size: 48px;
+}
+
+.pAccod{
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    text-transform: none;
+    font-family: 'Manrope', sans-serif;
+    color: #24272E;
+    word-spacing: 2px;
+}
+/* accommodation header END */
+
+/* accommodation BODY*/
+.accommodationBody{
+    padding-top: 60px;
+    padding-left: 100px;
+    padding-right: 50px;
+    background-color: #E0E0E0;
+    padding-bottom: 280px;
+}
+
+.h3BodyAccod{
+    font-weight: 1000;
+    letter-spacing: 1.5px;
+    word-spacing: 2.5px;
+
+}
+
+.h1BodyAccod{
+    font-size: 40px;
+    color: #002366;
+}
+
+.BodyAccodImg{
+    float: right;
+    width: 650px;
+    height: auto;
+}
+
+.pBodyAccod{
+    font-size: 17px;
+    text-transform: none;
+    font-family: 'Manrope', sans-serif;
+    letter-spacing: 0.5px;
+
+}
+
+/*footer*/
+.footer{
+    padding-top: 20px;
+    padding-bottom: 20px    ;
+    background: #545457;
+}
+
+.footer .name h2{
+    margin-left: 35%;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+    gap: 5%;
+    padding-left: 35%;
+    padding-right: 35%;
+}
+
+.footer .box-container .box h3{
+    font-size: 15px;
+    padding: 10px;
+    color: white;
+}
+
+.footer .box-container .box a{
+    font-size: 15px;
+    display: block;
+    color: white;
+    padding: 5px;
+    
+}
+
+.footer .box-container .box a i{
+    color: white;
+    padding-right: .5rem;
+}
+
+.footer .share{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.footer .share a{
+    color: white;
+    font-size: 20px;
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    border-radius: 50%;
+    border: .1rem solid var(--primary);
+    margin: .3rem;
+}
+
+.footer .credit{
+    font-size: small;
+    text-align: center;
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: .1rem solid rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+
+/* end */
+
+/*accod Ammenities*/
+.accodAmmen{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+
+.accodAmmenDivImg{
+    width: 600px;
+    vertical-align: middle;
+    float: left;
+    margin-right: 60px;
+    border-radius: 1rem;
+}
+
+.h3accodAmmen{
+    font-family: 'Manrope', sans-serif;
+    font-size: 35px;
+    color: #545457;
+    padding-bottom: 20px;
+    padding-top: 80px;
+}
+
+.paccodAmmen{
+    font-family: 'Rethink Sans', sans-serif;
+    letter-spacing: 0.5px;
+    word-spacing: 2.5px;
+    text-transform: none;
+    font-size: 17px;
+}
+
+/*accod Ammenities 2*/
+.accodAmmen2{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.accodAmmenDivImg2{
+    width: 600px;
+    vertical-align: middle;
+    float: right;
+    margin-left: 60px;
+    border-radius: 1rem;
+}
+
+.h3accodAmmen2{
+    font-family: 'Manrope', sans-serif;
+    font-size: 35px;
+    color: #545457;
+    padding-bottom: 20px;
+    padding-top: 80px;
+}
+
+.paccodAmmen2{
+    font-family: 'Rethink Sans', sans-serif;
+    letter-spacing: 0.5px;
+    word-spacing: 2.5px;
+    text-transform: none;
+    font-size: 17px;
+}
+
+/*ammen main body*/
+
+.ammenMainBody{
+    margin-top: 30px;
+    padding: 100px;
+}
+
+.ammenMainBodyDivh4{
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    padding-bottom: 5px;
+}
+
+.ammenMainBodyDivh3{
+    padding-top: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    color: #002366
+}
+
+.ammenMainBodyDivp{
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 200;
+    text-transform: none;
+}
+
+
+/*ammendrooms*/
+.ammendRooms{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+}
+.card {
+    margin-bottom: 40px;
+    display: inline-block;
+    margin-left: 40px;
+    width: 500px;
+    background-color: white;
+    padding: .4em;
+    border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .card-image1 {
+    background-image: url(rooms5.jpg);
+    background-size: cover;
+    width: auto;
+    height: 300px;
+    border-radius: 1.5rem 1.5rem 0rem 0rem;
+  }
+  .card-image2 {
+    background-image: url(rooms6.jpg);
+    background-size: cover;
+    width: auto;
+    height: 300px;
+    border-radius: 1.5rem 1.5rem 0rem 0rem;
+  }
+
+  .card-image3 {
+    background-image: url(room11.jpg);
+    background-size: cover;
+    width: auto;
+    height: 300px;
+    border-radius: 1.5rem 1.5rem 0rem 0rem;
+  }
+  
+  .card-image4 {
+    background-image: url(rooms18.jpg);
+    background-size: cover;
+    width: auto;
+    height: 300px;
+    border-radius: 1.5rem 1.5rem 0rem 0rem;
+  }
+  
+  .card-image5 {
+    background-image: url(rooms16.jpg);
+    background-size: cover;
+    width: auto;
+    height: 300px;
+    border-radius: 1.5rem 1.5rem 0rem 0rem;
+  }
+  
+  .card-image6 {
+    background-image: url(rooms7.jpg);
+    background-size: cover;
+    width: auto;
+    height: 300px;
+    border-radius: 1.5rem 1.5rem 0rem 0rem;
+  }
+
+  .card-image7 {
+    background-image: url(rooms27.jpg);
+    background-size: cover;
+    width: auto;
+    height: 300px;
+    border-radius: 1.5rem 1.5rem 0rem 0rem;
+  }
+
+    .card-image8 {
+    background-image: url(rooms26.jpg);
+    background-size: cover;
+    width: auto;
+    height: 300px;
+    border-radius: 1.5rem 1.5rem 0rem 0rem;
+  }
+  
+  .card-image9 {
+    background-image: url(rooms23.jpg);
+    background-size: cover;
+    width: auto;
+    height: 300px;
+    border-radius: 1.5rem 1.5rem 0rem 0rem;
+  }
+  .card-image10 {
+    background-image: url(rooms25.jpg);
+    background-size: cover;
+    width: auto;
+    height: 300px;
+    border-radius: 1.5rem 1.5rem 0rem 0rem;
+  }
+  
+  .card-image11 {
+    background-image: url(rooms24.jpg);
+    background-size: cover;
+    width: auto;
+    height: 300px;
+    border-radius: 1.5rem 1.5rem 0rem 0rem;
+  }
+
+  .card-image12 {
+    background-image: url(rooms22.jpg);
+    background-size: cover;
+    width: auto;
+    height: 300px;
+    border-radius: 1.5rem 1.5rem 0rem 0rem;
+  }
+  
+  
+  .card-image:hover {
+    transform: scale(0.98);
+  }
+  
+  .heading {
+    font-family: 'Rethink Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #002366;
+    padding: 10px;
+    margin: 10px;
+    
+  }
+
+  .GuestRoomBtn{
+    color: #e8e8e8;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 5px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    background: #002366;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  

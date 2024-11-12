@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0"> <!--FOR ICON AT THE FOOTER-->
+        <title>Grandeur Hotel | Luxury Hotel at Hands</title>
+        <link rel="icon" type="images/x-icon" href="logo2.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!--FOR ICON AT THE FOOTER-->
+        <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet"><!--font for description in section-->
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> <!--Put in documentation source: google fonts-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="Home.css">
+        <link rel="stylesheet" href="roomsandsuites.css">
+        <link rel="stylesheet" href="gallery.css">
+    </head>
+    
+    <body>
+        <header class="header">
+
+            <!--<div class="logointro">
+               <img src="logo2.png" alt="Hotel Logo" width="35px">
+            </div>--> <!--LOGO-->
+   
+            <a href="#" class="logo" img src="logo2.png"><b>Grandeur Hotel </b></a>
+   
+               <nav class="navbar">
+                  <a href="Grandeur Hotel.html">Home</a>
+                  <a href="Dining.html">Dining</a>
+                  <a href="experience.html">Experiences</a>
+                  <a href="gallery.html">Gallery</a>
+                  <a href="Events.html">Events</a>
+                  <a href="booknow.html" class="btn"><b> book now</b></a>
+               </nav>
+            </header>
+
+         <!--gallery body-->
+         <div class="container">
+            <div class="image-container">
+              <div class="image"><img src="outdoors1.jpg" alt="" /></div>
+              <div class="image"><img src="outdoors2.jpg" alt="" /></div>
+              <div class="image"><img src="outdoors3.jpg" alt="" /></div>
+              <div class="image"><img src="outdoors4.jpg" alt="" /></div>
+              <div class="image"><img src="outdoors5.jpg" alt="" /></div>
+              <div class="image"><img src="indoors1.jpg" alt="" /></div>
+              <div class="image"><img src="indoors2.jpg" alt="" /></div>
+              <div class="image"><img src="indoors4.jpg" alt="" /></div>
+              <div class="image"><img src="indoors5.jpg" alt="" /></div>
+              <div class="image"><img src="rooms1.jpg" alt="" /></div>
+              <div class="image"><img src="rooms2.jpg" alt="" /></div>
+              <div class="image"><img src="rooms3.jpg" alt="" /></div>
+              <div class="image"><img src="rooms4.jpg" alt="" /></div>
+              <div class="image"><img src="rooms5.jpg" alt="" /></div>
+              <div class="image"><img src="rooms6.jpg" alt="" /></div>
+              <div class="image"><img src="rooms7.jpg" alt="" /></div>
+              <div class="image"><img src="rooms8.jpg" alt="" /></div>
+              <div class="image"><img src="rooms9.jpg" alt="" /></div>
+              <div class="image"><img src="rooms10.jpg" alt="" /></div>
+              <div class="image"><img src="rooms11.jpg" alt="" /></div>
+              <div class="image"><img src="rooms12.jpg" alt="" /></div>
+              <div class="image"><img src="rooms13.jpg" alt="" /></div>
+              <div class="image"><img src="rooms14.jpg" alt="" /></div>
+              <div class="image"><img src="rooms15.jpg" alt="" /></div>
+            </div>
+      
+            <div class="popup-image">
+              <span>&times;</span>
+              <img src="" alt="" />
+            </div>
+          </div>
+      
+          <script>
+            document.querySelectorAll(".image img").forEach(image => {
+              image.onclick = () => {
+                document.querySelector(".popup-image").style.display = "block";
+                document.querySelector(".popup-image img").src =
+                  image.getAttribute("src");
+              };
+            });
+      
+            document.querySelector(".popup-image span").onclick = () => {
+              document.querySelector(".popup-image").style.display = "none";
+            };
+          </script>
+          <!--end of gallery body-->
+
+
+         <section class="footer">
+      
+            <div class="name">
+               <h2>Philippine Grandeur Hotel</h2>
+            </div>
+
+            <br>
+            <br>
+      
+            <div class="box-container">
+               <div class="box">
+                  <h3>contact info</h3>
+                     <a href="#"> <i class="fas fa-phone"></i>(+63)51-233-7051</a>
+                     <a href="#"> <i class="fas fa-phone"></i>(+63)74-097-0034</a>
+                     <a href="#"> <i class="fas fa-envelope"></i>(+63)89-890-6904</a>
+                     <a href="#"> <i class="fas fa-map"></i>(+63)90-823-6543</a>
+               </div>
+
+               <div class="box">
+                  <h3>quick links</h3>
+                     <a href="#"> <i class="fas fa-arrow-right"></i>Home</a>
+                     <a href="#">  <i class="fas fa-arrow-right"></i>about</a>
+                     <a href="#">  <i class="fas fa-arrow-right"></i>rooms</a>
+                     <a href="#">  <i class="fas fa-arrow-right"></i>gallery</a>
+                     <a href="#">  <i class="fas fa-arrow-right"></i>reservation</a>
+               </div>
+            </div>
+               <div class="credit">
+                  &copy; All Right Reserve 2023 by Grandeur Hotel
+               </div>
+         </section>
+      <!-- end -->
+
+
+
+    </body>
+</html>

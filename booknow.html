@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0"> <!--FOR ICON AT THE FOOTER-->
+        <title>Grandeur Hotel | Luxury Hotel at Hands</title>
+        <link rel="icon" type="images/x-icon" href="logo2.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!--FOR ICON AT THE FOOTER-->
+        <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet"><!--font for description in section-->
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> <!--Put in documentation source: google fonts-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="homecss_pero_para_sa_booknow.css">
+        <link rel="stylesheet" href="booknow.css">
+    </head>
+    
+    <body>
+
+      <!--header-->
+        <header class="header">
+
+         <!--<div class="logointro">
+            <img src="logo2.png" alt="Hotel Logo" width="35px">
+         </div>--> <!--LOGO-->
+
+            <a href="#" class="logo"><b>Grandeur Hotel </b></a>
+
+            <nav class="navbar">
+               <a href="Grandeur Hotel.html">Home</a>
+               <a href="Dining.html">Dining</a>
+               <a href="experience.html">Experiences</a>
+               <a href="gallery.html">Gallery</a>
+               <a href="Events.html">Events</a>
+               <a href="booknow.html" class="btn"><b> Book now</b></a>
+            </nav>
+         </header>
+
+      <!-- Book Now Header -->
+      <div class="page-header" id="banner">
+        <img id="img" src="header.jpg">
+        <div class="hook"><h1>Enjoy the cosiest holiday you'll ever experience</h1></div>
+      </div>
+      <!-- end of Header -->
+
+
+      <!-- book now -->
+      <form action="reservation.php" method="post">
+         <div class ="booking">
+         <div class="elem-group name">
+           <label for="lastname">Last Name</label>
+           <input type="text" id="name" name="lastname" placeholder="Last Name" pattern=[A-Z\sa-z]{3,20} required>
+         </div>
+         <div class="elem-group name">
+           <label for="firstname">First Name</label>
+           <input type="text" id="name" name="firstname" placeholder="First Name" pattern=[A-Z\sa-z]{3,20} required>
+         </div>
+         <div class="elem-group name">
+           <label for="middlename">Middle Name</label>
+           <input type="text" id="name" name="middlename" placeholder="N/A if not applicable"  pattern=[A-Z\sa-z]{3,20} required>
+         </div>
+         <div class="elem-group">
+           <label for="email">E-mail</label>
+           <input type="email" id="email" name="email" placeholder="abcdefghij@email.com" required>
+         </div>
+         <div class="elem-group">
+           <label for="phonenumber">Phone</label>
+           <input type="tel" id="phone" name="phonenumber" placeholder="0999-999-999" pattern=(\d{4})-?\s?(\d{3})-?\s?(\d{4}) required>
+         </div>
+         <hr>
+         <div class="elem-group inlined">
+           <label for="adult">Adults</label>
+           <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+         </div>
+         <div class="elem-group inlined">
+           <label for="child">Children</label>
+           <input type="number" id="child" name="total_children" placeholder="0" min="0" required>
+         </div>
+         <div class="elem-group inlined">
+           <label for="checkin-date">Check-in Date</label>
+           <input type="date" id="checkin-date" name="checkin" required>
+         </div>
+         <div class="elem-group inlined">
+           <label for="checkout-date">Check-out Date</label>
+           <input type="date" id="checkout-date" name="checkout" required>
+         </div>
+         <div class="elem-group">
+           <label for="room-selection">Select Room Preference</label>
+           <select id="room-selection" name="room_preference" required>
+               <option value="">Choose a Room from the List</option>
+               <option value="guestroom_1kb">Guest Room, 1 King Bed</option>
+               <option value="guestroom_2db">Guest Room, 2 Double Beds</option>
+               <option value="lguestroom_1kb">Large Guest Room, 1 King Bed</option>
+               <option value="lguestroom_2db">Large Guest Room, 2 Double Beds</option>
+           </select>
+         </div>
+         <hr>
+         <div class="elem-group">
+           <label for="message">Anything Else?</label>
+           <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important."></textarea>
+         </div>
+         <button type="submit">Book Now!</button>
+       </form>
+     </div>
+      <!-- end of book now -->
+
+
+      <!--Align to the right-->
+      <div class="briefkineme">
+        <img src="starssss.png" class="stars">
+        <br><h1>5-star family-friendly hotel</h1><br>
+        <div class="ratings"><h1>8.7</h1></div><h2 class="vg">Very Good</h2>
+        <table>
+          <tr>
+            <th colspan="2">Popular Amenities<br></th>
+          </tr>
+          <tr>
+            <td class="amenities"><img src="dining.jpg" class="smollogo">Dining Available</td>
+            <td class="amenities"><img src="petfriendlyjpg.jpg" class="smollogo">Pet Friendly</td>
+          </tr>
+          <tr>
+            <td class="amenities"><img src="swimmingpool.jpg" class="smollogo">Pool</td>
+            <td class="amenities"><img src="wifi.png" class="smollogo">Free WiFi</td>
+          </tr>
+          <tr>
+            <th colspan="2">Explore The Area</th>
+          </tr>
+          </table>
+
+          <table>
+          <tr>
+            <td class="logo"><img src="location_pin_002.jpg" class="location">Philippine Air Force Aerospace Museum</td>
+          </tr>
+          <tr>
+            <td class="logo"><img src="location_pin_002.jpg" class="location">Villamor Gold Driving Range</td>
+          </tr>
+          <tr>
+            <td class="logo"><img src="location_pin_002.jpg" class="location">Diplomatic Hall</td>
+          </tr>
+          <tr>
+            <td class="logo"><img src="location_pin_002.jpg" class="location">Philippines AirAsia Corporate Headquarters</td>
+          </tr>
+          <tr>
+            <td class="logo"><img src="location_pin_002.jpg" class="location">Shrine of St. Thérèse of the Child Jesus</td>
+          </tr>
+        </table>
+
+        </div>
+      </div>
+
+      
+     <!--end of align-->
+
+
+      <!-- footer -->
+ 
+         <section class="footer">
+      
+            <div class="name">
+               <h2>Philippine Grandeur Hotel&#174;</h2>
+            </div>
+
+            <br>
+            <br>
+      
+            <div class="box-container">
+               <div class="box">
+                  <h3>contact info</h3>
+                     <a href="#"> <i class="fas fa-phone"></i>(+63)51-233-7051</a>
+                     <a href="#"> <i class="fas fa-phone"></i>(+63)74-097-0034</a>
+                     <a href="#"> <i class="fas fa-envelope"></i>(+63)89-890-6904</a>
+                     <a href="#"> <i class="fas fa-map"></i>(+63)90-823-6543</a>
+               </div>
+
+               <div class="box">
+                  <h3>quick links</h3>
+                     <a href="#"> <i class="fas fa-arrow-right"></i>Home</a>
+                     <a href="#">  <i class="fas fa-arrow-right"></i>about</a>
+                     <a href="#">  <i class="fas fa-arrow-right"></i>rooms</a>
+                     <a href="#">  <i class="fas fa-arrow-right"></i>gallery</a>
+                     <a href="#">  <i class="fas fa-arrow-right"></i>reservation</a>
+               </div>
+            </div>
+               <div class="credit">
+                  &copy; All Right Reserve 2023 by Grandeur Hotel
+               </div>
+         </section>
+      <!-- end -->
+
+
+
+    </body>
+</html>

@@ -1,0 +1,38 @@
+.card {
+  display: flex;
+  background: #ffff;
+  flex-direction: column; /* Change to column layout */
+  align-items: center; /* Center items horizontally */
+  height: 600px;
+  width: 800px;
+  margin: 0 auto;
+  box-shadow: 0px 15px 50px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 2%;
+}
+
+.title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  font-size: 30px;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+span{
+  font-size: 20px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.details {
+  margin-left: 15px;
+}
+
+.details ul {
+  margin: 10px 0; /* Add margin for spacing between list items */
+  padding: 0;
+  list-style-type: none;
+}
